@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
 import SingleCategoryView from '@/components/single-category-view'
-import categoriesData from '../../../data/categories.json'
+import categoriesData from '../../../../data/categories.json'
 
 interface CategoryPageProps {
   params: {

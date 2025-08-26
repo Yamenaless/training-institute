@@ -27,7 +27,7 @@ import {
 } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import coursesData from '../data/courses.json'
+import coursesData from '../../data/courses.json'
 
 interface Category {
   id: number

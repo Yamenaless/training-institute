@@ -135,9 +135,9 @@ const CourseDetails = ({ course, category }: CourseDetailsProps) => {
             <nav className="mb-6">
               <div className="flex items-center space-x-2 text-sm text-white/80">
                 <span>Home</span>
-                <span className="text-white/60">></span>
+                <span className="text-white/60">&gt;</span>
                 <span>Courses</span>
-                <span className="text-white/60">></span>
+                <span className="text-white/60">&gt;</span>
                 <span className="text-white font-medium">{course.name}</span>
               </div>
             </nav>

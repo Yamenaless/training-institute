@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "category_id": 1,
+    "name": "Event Management and Planning",
+    "description": "Master comprehensive event planning from conception to execution, including budget management, vendor coordination, and risk assessment.",
+    "duration_days": 5,
+    "image": "/images/courses/event-management.jpg"
+  },
+  {
+    "id": 2,
+    "category_id": 1,
+    "name": "Advanced Event Protocol Training",
+    "description": "Master international event protocol, diplomatic etiquette, and VIP management for high-profile events.",
+    "duration_days": 4,
+    "image": "/images/courses/event-protocol.jpg"
+  },
+  {
+    "id": 3,
+    "category_id": 1,
+    "name": "Tourism Industry Management",
+    "description": "Comprehensive training in tourism operations, destination marketing, and sustainable tourism practices.",
+    "duration_days": 6,
+    "image": "/images/courses/tourism-management.jpg"
+  },
+  {
+    "id": 4,
+    "category_id": 2,
+    "name": "Advanced PR & Communication",
+    "description": "Strategic public relations, crisis communication, and media relations for modern organizations.",
+    "duration_days": 3,
+    "image": "/images/courses/pr-communication.jpg"
+  },
+  {
+    "id": 5,
+    "category_id": 2,
+    "name": "Corporate Branding Masterclass",
+    "description": "Build and sustain powerful corporate brands through strategic positioning and brand management.",
+    "duration_days": 5,
+    "image": "/images/courses/corporate-branding.jpg"
+  },
+  {
+    "id": 6,
+    "category_id": 2,
+    "name": "Digital Media Strategy",
+    "description": "Develop comprehensive digital media strategies, content creation, and online reputation management.",
+    "duration_days": 4,
+    "image": "/images/courses/digital-media.jpg"
+  },
+  {
+    "id": 7,
+    "category_id": 3,
+    "name": "Strategic HR Management",
+    "description": "Develop HR strategies that align with business goals, including talent management and organizational development.",
+    "duration_days": 5,
+    "image": "/images/courses/hr-management.jpg"
+  },
+  {
+    "id": 8,
+    "category_id": 3,
+    "name": "Leadership & People Management",
+    "description": "Enhance leadership skills, emotional intelligence, and team management for effective people leadership.",
+    "duration_days": 4,
+    "image": "/images/courses/leadership.jpg"
+  },
+  {
+    "id": 9,
+    "category_id": 3,
+    "name": "Talent Acquisition & Recruitment",
+    "description": "Modern recruitment strategies, candidate assessment techniques, and employer branding for talent acquisition.",
+    "duration_days": 3,
+    "image": "/images/courses/recruitment.jpg"
+  },
+  {
+    "id": 10,
+    "category_id": 4,
+    "name": "Financial Analysis & Reporting",
+    "description": "Advanced financial analysis techniques, financial modeling, and comprehensive reporting for decision-making.",
+    "duration_days": 5,
+    "image": "/images/courses/financial-analysis.jpg"
+  },
+  {
+    "id": 11,
+    "category_id": 4,
+    "name": "Corporate Finance Management",
+    "description": "Strategic corporate finance, capital structure optimization, and investment decision-making processes.",
+    "duration_days": 6,
+    "image": "/images/courses/corporate-finance.jpg"
+  },
+  {
+    "id": 12,
+    "category_id": 4,
+    "name": "Risk Management & Compliance",
+    "description": "Comprehensive risk assessment, regulatory compliance, and financial risk management strategies.",
+    "duration_days": 4,
+    "image": "/images/courses/risk-management.jpg"
+  },
+  {
+    "id": 13,
+    "category_id": 5,
+    "name": "Digital Marketing Strategy",
+    "description": "Comprehensive digital marketing planning, campaign optimization, and ROI measurement across all digital channels.",
+    "duration_days": 5,
+    "image": "/images/courses/digital-marketing-strategy.jpg"
+  },
+  {
+    "id": 14,
+    "category_id": 5,
+    "name": "Social Media Marketing Mastery",
+    "description": "Advanced social media strategies, content creation, community management, and social commerce.",
+    "duration_days": 4,
+    "image": "/images/courses/social-media.jpg"
+  },
+  {
+    "id": 15,
+    "category_id": 5,
+    "name": "SEO & Content Marketing",
+    "description": "Search engine optimization, content strategy, and organic growth techniques for digital visibility.",
+    "duration_days": 3,
+    "image": "/images/courses/seo-content.jpg"
+  },
+  {
+    "id": 16,
+    "category_id": 6,
+    "name": "PMP Certification Preparation",
+    "description": "Comprehensive Project Management Professional certification training covering all PMI knowledge areas.",
+    "duration_days": 7,
+    "image": "/images/courses/pmp-certification.jpg"
+  },
+  {
+    "id": 17,
+    "category_id": 6,
+    "name": "Agile & Scrum Management",
+    "description": "Agile methodologies, Scrum framework implementation, and iterative project management approaches.",
+    "duration_days": 4,
+    "image": "/images/courses/agile-scrum.jpg"
+  },
+  {
+    "id": 18,
+    "category_id": 6,
+    "name": "Risk & Quality Management",
+    "description": "Project risk assessment, quality assurance processes, and stakeholder management in complex projects.",
+    "duration_days": 3,
+    "image": "/images/courses/project-risk.jpg"
+  },
+  {
+    "id": 19,
+    "category_id": 7,
+    "name": "Advanced Sales Techniques",
+    "description": "Modern sales methodologies, consultative selling, and relationship-building for sales professionals.",
+    "duration_days": 4,
+    "image": "/images/courses/sales-techniques.jpg"
+  },
+  {
+    "id": 20,
+    "category_id": 7,
+    "name": "Business Development Strategy",
+    "description": "Strategic business development, market expansion, and partnership development for growth-oriented professionals.",
+    "duration_days": 5,
+    "image": "/images/courses/business-development.jpg"
+  },
+  {
+    "id": 21,
+    "category_id": 7,
+    "name": "Customer Relationship Management",
+    "description": "CRM strategies, customer retention techniques, and customer lifecycle management for sustainable growth.",
+    "duration_days": 3,
+    "image": "/images/courses/crm.jpg"
+  },
+  {
+    "id": 22,
+    "category_id": 8,
+    "name": "Cybersecurity Fundamentals",
+    "description": "Essential cybersecurity principles, threat assessment, and security implementation for business protection.",
+    "duration_days": 5,
+    "image": "/images/courses/cybersecurity.jpg"
+  },
+  {
+    "id": 23,
+    "category_id": 8,
+    "name": "Data Analytics & Business Intelligence",
+    "description": "Data analysis techniques, business intelligence tools, and data-driven decision making for modern businesses.",
+    "duration_days": 6,
+    "image": "/images/courses/data-analytics.jpg"
+  },
+  {
+    "id": 24,
+    "category_id": 8,
+    "name": "IT Project Management",
+    "description": "Technology project management, software development lifecycle, and IT governance for technology leaders.",
+    "duration_days": 4,
+    "image": "/images/courses/it-project-management.jpg"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "city": "Dubai",
+    "country": "UAE",
+    "address": "Dubai International Financial Centre, Gate Village Building 3, Level 4",
+    "image": "/images/venues/dubai.jpg"
+  },
+  {
+    "id": 2,
+    "city": "London",
+    "country": "UK",
+    "address": "Canary Wharf Business Centre, 25 Canada Square, Level 12",
+    "image": "/images/venues/london.jpg"
+  },
+  {
+    "id": 3,
+    "city": "Istanbul",
+    "country": "Turkey",
+    "address": "Levent Business District, Büyükdere Caddesi No: 145, Kanyon Office Tower",
+    "image": "/images/venues/istanbul.jpg"
+  },
+  {
+    "id": 4,
+    "city": "Barcelona",
+    "country": "Spain",
+    "address": "Diagonal Mar Business Park, Avinguda Diagonal 197, Torre Diagonal Mar",
+    "image": "/images/venues/barcelona.jpg"
+  },
+  {
+    "id": 5,
+    "city": "Singapore",
+    "country": "Singapore",
+    "address": "Marina Bay Financial Centre, Tower 2, Level 15, 10 Marina Boulevard",
+    "image": "/images/venues/singapore.jpg"
+  },
+  {
+    "id": 6,
+    "city": "New York",
+    "country": "USA",
+    "address": "Manhattan Business Center, 1345 Avenue of the Americas, 45th Floor",
+    "image": "/images/venues/new-york.jpg"
+  },
+  {
+    "id": 7,
+    "city": "Paris",
+    "country": "France",
+    "address": "La Défense Business Quarter, Tour Total, 2 Place Jean Millier",
+    "image": "/images/venues/paris.jpg"
+  },
+  {
+    "id": 8,
+    "city": "Frankfurt",
+    "country": "Germany",
+    "address": "Frankfurt Financial District, Mainzer Landstraße 16, Eurotheum Tower",
+    "image": "/images/venues/frankfurt.jpg"
+  },
+  {
+    "id": 9,
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "address": "Central Business District, International Finance Centre, Tower 2, Level 35",
+    "image": "/images/venues/hong-kong.jpg"
+  },
+  {
+    "id": 10,
+    "city": "Sydney",
+    "country": "Australia",
+    "address": "Sydney CBD, Governor Phillip Tower, 1 Farrer Place, Level 25",
+    "image": "/images/venues/sydney.jpg"
+  },
+  {
+    "id": 11,
+    "city": "Toronto",
+    "country": "Canada",
+    "address": "Financial District, First Canadian Place, 100 King Street West, Suite 3400",
+    "image": "/images/venues/toronto.jpg"
+  },
+  {
+    "id": 12,
+    "city": "Zurich",
+    "country": "Switzerland",
+    "address": "Zurich Financial Quarter, Prime Tower, Hardstrasse 201, Level 20",
+    "image": "/images/venues/zurich.jpg"
+  }
+]

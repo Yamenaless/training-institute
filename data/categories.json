@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Hospitality & Tourism",
+    "description": "Comprehensive courses in tourism management, event planning, and hospitality excellence for industry professionals.",
+    "image": "/images/categories/hospitality.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Media & Public Relations",
+    "description": "Strategic communication, media relations, and corporate branding courses for modern PR professionals.",
+    "image": "/images/categories/media.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Human Resources",
+    "description": "Advanced HR management, talent acquisition, and leadership development programs for HR professionals.",
+    "image": "/images/categories/hr.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Finance & Accounting",
+    "description": "Professional finance, accounting, and financial analysis courses for corporate finance professionals.",
+    "image": "/images/categories/finance.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Digital Marketing",
+    "description": "Cutting-edge digital marketing strategies, social media management, and online brand development.",
+    "image": "/images/categories/digital-marketing.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Project Management",
+    "description": "Comprehensive project management methodologies, Agile practices, and leadership skills for project success.",
+    "image": "/images/categories/project-management.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Sales & Business Development",
+    "description": "Advanced sales techniques, business development strategies, and customer relationship management.",
+    "image": "/images/categories/sales.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Information Technology",
+    "description": "Technology training, cybersecurity, data analysis, and IT management for modern businesses.",
+    "image": "/images/categories/it.jpg"
+  }
+]

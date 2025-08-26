@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "course_id": 1,
+    "venue_id": 1,
+    "start_date": "2025-02-15",
+    "end_date": "2025-02-19",
+    "price": 1200.00,
+    "status": "open",
+    "max_participants": 25
+  },
+  {
+    "id": 2,
+    "course_id": 1,
+    "venue_id": 2,
+    "start_date": "2025-03-10",
+    "end_date": "2025-03-14",
+    "price": 1350.00,
+    "status": "open",
+    "max_participants": 25
+  },
+  {
+    "id": 3,
+    "course_id": 2,
+    "venue_id": 3,
+    "start_date": "2025-02-20",
+    "end_date": "2025-02-23",
+    "price": 980.00,
+    "status": "open",
+    "max_participants": 20
+  },
+  {
+    "id": 4,
+    "course_id": 3,
+    "venue_id": 4,
+    "start_date": "2025-03-05",
+    "end_date": "2025-03-10",
+    "price": 1500.00,
+    "status": "open",
+    "max_participants": 30
+  },
+  {
+    "id": 5,
+    "course_id": 4,
+    "venue_id": 5,
+    "start_date": "2025-02-25",
+    "end_date": "2025-02-27",
+    "price": 1100.00,
+    "status": "open",
+    "max_participants": 20
+  },
+  {
+    "id": 6,
+    "course_id": 5,
+    "venue_id": 6,
+    "start_date": "2025-03-15",
+    "end_date": "2025-03-19",
+    "price": 1250.00,
+    "status": "open",
+    "max_participants": 25
+  },
+  {
+    "id": 7,
+    "course_id": 6,
+    "venue_id": 7,
+    "start_date": "2025-04-01",
+    "end_date": "2025-04-04",
+    "price": 1400.00,
+    "status": "open",
+    "max_participants": 22
+  },
+  {
+    "id": 8,
+    "course_id": 7,
+    "venue_id": 8,
+    "start_date": "2025-04-10",
+    "end_date": "2025-04-14",
+    "price": 1300.00,
+    "status": "open",
+    "max_participants": 25
+  },
+  {
+    "id": 9,
+    "course_id": 8,
+    "venue_id": 9,
+    "start_date": "2025-04-20",
+    "end_date": "2025-04-23",
+    "price": 1150.00,
+    "status": "open",
+    "max_participants": 20
+  },
+  {
+    "id": 10,
+    "course_id": 9,
+    "venue_id": 10,
+    "start_date": "2025-05-01",
+    "end_date": "2025-05-03",
+    "price": 950.00,
+    "status": "open",
+    "max_participants": 18
+  },
+  {
+    "id": 11,
+    "course_id": 10,
+    "venue_id": 1,
+    "start_date": "2025-05-10",
+    "end_date": "2025-05-14",
+    "price": 1600.00,
+    "status": "open",
+    "max_participants": 25
+  },
+  {
+    "id": 12,
+    "course_id": 11,
+    "venue_id": 2,
+    "start_date": "2025-05-20",
+    "end_date": "2025-05-25",
+    "price": 1800.00,
+    "status": "open",
+    "max_participants": 20
+  },
+  {
+    "id": 13,
+    "course_id": 12,
+    "venue_id": 3,
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-04",
+    "price": 1400.00,
+    "status": "open",
+    "max_participants": 22
+  },
+  {
+    "id": 14,
+    "course_id": 13,
+    "venue_id": 4,
+    "start_date": "2025-06-10",
+    "end_date": "2025-06-14",
+    "price": 1500.00,
+    "status": "open",
+    "max_participants": 25
+  },
+  {
+    "id": 15,
+    "course_id": 14,
+    "venue_id": 5,
+    "start_date": "2025-06-20",
+    "end_date": "2025-06-23",
+    "price": 1200.00,
+    "status": "open",
+    "max_participants": 20
+  },
+  {
+    "id": 16,
+    "course_id": 15,
+    "venue_id": 6,
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-03",
+    "price": 900.00,
+    "status": "open",
+    "max_participants": 18
+  },
+  {
+    "id": 17,
+    "course_id": 16,
+    "venue_id": 7,
+    "start_date": "2025-07-10",
+    "end_date": "2025-07-16",
+    "price": 2000.00,
+    "status": "open",
+    "max_participants": 30
+  },
+  {
+    "id": 18,
+    "course_id": 17,
+    "venue_id": 8,
+    "start_date": "2025-07-20",
+    "end_date": "2025-07-23",
+    "price": 1300.00,
+    "status": "open",
+    "max_participants": 22
+  },
+  {
+    "id": 19,
+    "course_id": 18,
+    "venue_id": 9,
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-03",
+    "price": 1000.00,
+    "status": "open",
+    "max_participants": 20
+  },
+  {
+    "id": 20,
+    "course_id": 19,
+    "venue_id": 10,
+    "start_date": "2025-08-10",
+    "end_date": "2025-08-13",
+    "price": 1250.00,
+    "status": "open",
+    "max_participants": 25
+  },
+  {
+    "id": 21,
+    "course_id": 20,
+    "venue_id": 11,
+    "start_date": "2025-08-20",
+    "end_date": "2025-08-24",
+    "price": 1450.00,
+    "status": "open",
+    "max_participants": 22
+  },
+  {
+    "id": 22,
+    "course_id": 21,
+    "venue_id": 12,
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-03",
+    "price": 950.00,
+    "status": "open",
+    "max_participants": 18
+  },
+  {
+    "id": 23,
+    "course_id": 22,
+    "venue_id": 1,
+    "start_date": "2025-09-10",
+    "end_date": "2025-09-14",
+    "price": 1400.00,
+    "status": "open",
+    "max_participants": 25
+  },
+  {
+    "id": 24,
+    "course_id": 23,
+    "venue_id": 2,
+    "start_date": "2025-09-20",
+    "end_date": "2025-09-25",
+    "price": 1700.00,
+    "status": "open",
+    "max_participants": 20
+  },
+  {
+    "id": 25,
+    "course_id": 24,
+    "venue_id": 3,
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-04",
+    "price": 1300.00,
+    "status": "open",
+    "max_participants": 22
+  },
+  {
+    "id": 26,
+    "course_id": 1,
+    "venue_id": 4,
+    "start_date": "2025-10-15",
+    "end_date": "2025-10-19",
+    "price": 1200.00,
+    "status": "open",
+    "max_participants": 25
+  },
+  {
+    "id": 27,
+    "course_id": 7,
+    "venue_id": 5,
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-05",
+    "price": 1300.00,
+    "status": "open",
+    "max_participants": 25
+  },
+  {
+    "id": 28,
+    "course_id": 13,
+    "venue_id": 6,
+    "start_date": "2025-11-15",
+    "end_date": "2025-11-19",
+    "price": 1500.00,
+    "status": "open",
+    "max_participants": 25
+  },
+  {
+    "id": 29,
+    "course_id": 16,
+    "venue_id": 7,
+    "start_date": "2025-12-01",
+    "end_date": "2025-12-07",
+    "price": 2000.00,
+    "status": "open",
+    "max_participants": 30
+  },
+  {
+    "id": 30,
+    "course_id": 10,
+    "venue_id": 8,
+    "start_date": "2025-12-15",
+    "end_date": "2025-12-19",
+    "price": 1600.00,
+    "status": "open",
+    "max_participants": 25
+  }
+]

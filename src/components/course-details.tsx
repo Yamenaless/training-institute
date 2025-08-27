@@ -17,6 +17,7 @@ import venuesData from '../../data/venues.json'
 
 interface Course {
   id: number
+  slug: string
   category_id: number
   name: string
   description: string
@@ -26,6 +27,7 @@ interface Course {
 
 interface Category {
   id: number
+  slug: string
   name: string
   description: string
   image: string

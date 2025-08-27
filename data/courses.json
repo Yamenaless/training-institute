@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "slug": "event-management-planning",
     "category_id": 1,
     "name": "Event Management and Planning",
     "description": "Master comprehensive event planning from conception to execution, including budget management, vendor coordination, and risk assessment.",
@@ -9,6 +10,7 @@
   },
   {
     "id": 2,
+    "slug": "advanced-event-protocol-training",
     "category_id": 1,
     "name": "Advanced Event Protocol Training",
     "description": "Master international event protocol, diplomatic etiquette, and VIP management for high-profile events.",
@@ -17,6 +19,7 @@
   },
   {
     "id": 3,
+    "slug": "tourism-industry-management",
     "category_id": 1,
     "name": "Tourism Industry Management",
     "description": "Comprehensive training in tourism operations, destination marketing, and sustainable tourism practices.",
@@ -25,6 +28,7 @@
   },
   {
     "id": 4,
+    "slug": "advanced-pr-communication",
     "category_id": 2,
     "name": "Advanced PR & Communication",
     "description": "Strategic public relations, crisis communication, and media relations for modern organizations.",
@@ -33,6 +37,7 @@
   },
   {
     "id": 5,
+    "slug": "corporate-branding-masterclass",
     "category_id": 2,
     "name": "Corporate Branding Masterclass",
     "description": "Build and sustain powerful corporate brands through strategic positioning and brand management.",
@@ -41,6 +46,7 @@
   },
   {
     "id": 6,
+    "slug": "digital-media-strategy",
     "category_id": 2,
     "name": "Digital Media Strategy",
     "description": "Develop comprehensive digital media strategies, content creation, and online reputation management.",
@@ -49,6 +55,7 @@
   },
   {
     "id": 7,
+    "slug": "strategic-hr-management",
     "category_id": 3,
     "name": "Strategic HR Management",
     "description": "Develop HR strategies that align with business goals, including talent management and organizational development.",
@@ -57,6 +64,7 @@
   },
   {
     "id": 8,
+    "slug": "leadership-people-management",
     "category_id": 3,
     "name": "Leadership & People Management",
     "description": "Enhance leadership skills, emotional intelligence, and team management for effective people leadership.",
@@ -65,6 +73,7 @@
   },
   {
     "id": 9,
+    "slug": "talent-acquisition-recruitment",
     "category_id": 3,
     "name": "Talent Acquisition & Recruitment",
     "description": "Modern recruitment strategies, candidate assessment techniques, and employer branding for talent acquisition.",
@@ -73,6 +82,7 @@
   },
   {
     "id": 10,
+    "slug": "financial-analysis-reporting",
     "category_id": 4,
     "name": "Financial Analysis & Reporting",
     "description": "Advanced financial analysis techniques, financial modeling, and comprehensive reporting for decision-making.",
@@ -81,6 +91,7 @@
   },
   {
     "id": 11,
+    "slug": "corporate-finance-management",
     "category_id": 4,
     "name": "Corporate Finance Management",
     "description": "Strategic corporate finance, capital structure optimization, and investment decision-making processes.",
@@ -89,6 +100,7 @@
   },
   {
     "id": 12,
+    "slug": "risk-management-compliance",
     "category_id": 4,
     "name": "Risk Management & Compliance",
     "description": "Comprehensive risk assessment, regulatory compliance, and financial risk management strategies.",
@@ -97,6 +109,7 @@
   },
   {
     "id": 13,
+    "slug": "digital-marketing-strategy",
     "category_id": 5,
     "name": "Digital Marketing Strategy",
     "description": "Comprehensive digital marketing planning, campaign optimization, and ROI measurement across all digital channels.",
@@ -105,6 +118,7 @@
   },
   {
     "id": 14,
+    "slug": "social-media-marketing-mastery",
     "category_id": 5,
     "name": "Social Media Marketing Mastery",
     "description": "Advanced social media strategies, content creation, community management, and social commerce.",
@@ -113,6 +127,7 @@
   },
   {
     "id": 15,
+    "slug": "seo-content-marketing",
     "category_id": 5,
     "name": "SEO & Content Marketing",
     "description": "Search engine optimization, content strategy, and organic growth techniques for digital visibility.",
@@ -121,6 +136,7 @@
   },
   {
     "id": 16,
+    "slug": "pmp-certification-preparation",
     "category_id": 6,
     "name": "PMP Certification Preparation",
     "description": "Comprehensive Project Management Professional certification training covering all PMI knowledge areas.",
@@ -129,6 +145,7 @@
   },
   {
     "id": 17,
+    "slug": "agile-scrum-management",
     "category_id": 6,
     "name": "Agile & Scrum Management",
     "description": "Agile methodologies, Scrum framework implementation, and iterative project management approaches.",
@@ -137,6 +154,7 @@
   },
   {
     "id": 18,
+    "slug": "risk-quality-management",
     "category_id": 6,
     "name": "Risk & Quality Management",
     "description": "Project risk assessment, quality assurance processes, and stakeholder management in complex projects.",
@@ -145,6 +163,7 @@
   },
   {
     "id": 19,
+    "slug": "advanced-sales-techniques",
     "category_id": 7,
     "name": "Advanced Sales Techniques",
     "description": "Modern sales methodologies, consultative selling, and relationship-building for sales professionals.",
@@ -153,6 +172,7 @@
   },
   {
     "id": 20,
+    "slug": "business-development-strategy",
     "category_id": 7,
     "name": "Business Development Strategy",
     "description": "Strategic business development, market expansion, and partnership development for growth-oriented professionals.",
@@ -161,6 +181,7 @@
   },
   {
     "id": 21,
+    "slug": "customer-relationship-management",
     "category_id": 7,
     "name": "Customer Relationship Management",
     "description": "CRM strategies, customer retention techniques, and customer lifecycle management for sustainable growth.",
@@ -169,6 +190,7 @@
   },
   {
     "id": 22,
+    "slug": "cybersecurity-fundamentals",
     "category_id": 8,
     "name": "Cybersecurity Fundamentals",
     "description": "Essential cybersecurity principles, threat assessment, and security implementation for business protection.",
@@ -177,6 +199,7 @@
   },
   {
     "id": 23,
+    "slug": "data-analytics-business-intelligence",
     "category_id": 8,
     "name": "Data Analytics & Business Intelligence",
     "description": "Data analysis techniques, business intelligence tools, and data-driven decision making for modern businesses.",
@@ -185,6 +208,7 @@
   },
   {
     "id": 24,
+    "slug": "it-project-management",
     "category_id": 8,
     "name": "IT Project Management",
     "description": "Technology project management, software development lifecycle, and IT governance for technology leaders.",

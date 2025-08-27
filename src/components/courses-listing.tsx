@@ -11,6 +11,7 @@ import categoriesData from '../../data/categories.json'
 
 interface Course {
   id: number
+  slug: string
   category_id: number
   name: string
   description: string
@@ -20,6 +21,7 @@ interface Course {
 
 interface Category {
   id: number
+  slug: string
   name: string
   description: string
   image: string
@@ -178,7 +180,7 @@ const CoursesListing = () => {
                   </div>
                 </div>
 
-                <Link href={`/courses/${course.id}`}>
+                <Link href={`/courses/${course.slug}`}>
                   <Button className="w-full group-hover:bg-primary group-hover:scale-105 transition-all">
                     View Course Details
                     <ArrowRight className="ml-2 h-4 w-4" />

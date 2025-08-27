@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Card, CardContent } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { 
@@ -19,9 +19,11 @@ import {
   ArrowLeft, 
   Calendar, 
   Clock,
+  BookOpen,
+  Award,
+  Target,
   DollarSign, 
   TrendingUp, 
-  Target, 
   Briefcase, 
   Smartphone 
 } from 'lucide-react'
@@ -31,6 +33,7 @@ import coursesData from '../../data/courses.json'
 
 interface Category {
   id: number
+  slug: string
   name: string
   description: string
   image: string
@@ -38,6 +41,7 @@ interface Category {
 
 interface Course {
   id: number
+  slug: string
   category_id: number
   name: string
   description: string
@@ -147,75 +151,112 @@ const SingleCategoryView = ({ category }: SingleCategoryViewProps) => {
   const gradientClass = getCategoryColor(category.name)
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div>
       {/* Hero Section */}
-      <section className="relative h-80 overflow-hidden">
-        <Image
-          src={getCategoryDemoImage(category.id)}
-          alt={category.name}
-          fill
-          className="object-cover"
-        />
-        <div className={`absolute inset-0 bg-gradient-to-r ${gradientClass} opacity-90`} />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center text-white max-w-4xl mx-auto px-4">
-            <div className="mb-6 flex justify-center">
-              {getCategoryIcon(category.name)}
+      <section className="relative min-h-[500px] flex items-center overflow-hidden py-16 md:py-20">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src={getCategoryDemoImage(category.id)}
+            alt={category.name}
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/80 to-transparent" />
+        </div>
+
+        {/* Content */}
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl">
+            {/* Breadcrumb */}
+            <nav className="mb-6">
+              <div className="flex items-center space-x-2 text-sm text-white/80">
+                <Link href="/" className="hover:text-white transition-colors">Home</Link>
+                <span className="text-white/60">&gt;</span>
+                <Link href="/categories" className="hover:text-white transition-colors">Categories</Link>
+                <span className="text-white/60">&gt;</span>
+                <span className="text-white font-medium">{category.name}</span>
+              </div>
+            </nav>
+
+            {/* Category Badge */}
+            <div className="mb-4">
+              <Badge variant="secondary" className="bg-blue-200 text-blue-800 px-3 py-1">
+                Training Category
+              </Badge>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+
+            {/* Main Heading */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               {category.name}
             </h1>
-            <p className="text-xl md:text-2xl font-light opacity-90 mb-6">
-              {category.description}
-            </p>
-            <Badge variant="secondary" className="text-lg px-4 py-2">
-              {courses.length} Course{courses.length !== 1 ? 's' : ''} Available
-            </Badge>
-          </div>
-        </div>
-      </section>
 
-      {/* Navigation Breadcrumb */}
-      <section className="bg-white border-b">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center space-x-2 text-sm">
-            <Link href="/categories" className="flex items-center text-primary hover:text-primary/80 transition-colors">
-              <ArrowLeft className="h-4 w-4 mr-1" />
-              Back to Categories
-            </Link>
-            <span className="text-gray-400">/</span>
-            <span className="text-gray-600">{category.name}</span>
-          </div>
-        </div>
-      </section>
-
-      {/* Courses Table Section */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="bg-white rounded-lg shadow-sm border overflow-hidden">
-            <div className="px-6 py-4 border-b bg-gray-50">
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                Available Courses
-              </h2>
-              <p className="text-gray-600">
-                Explore our {courses.length} professional training course{courses.length !== 1 ? 's' : ''} in {category.name.toLowerCase()}
-              </p>
+            {/* Description */}
+            <div className="max-w-2xl space-y-3">
+              <div className="space-y-3 text-white/90 text-xs md:text-sm leading-relaxed font-light">
+                <p className="text-base md:text-lg font-normal">
+                  {category.description}
+                </p>
+                
+                <p>
+                  Explore our comprehensive range of {courses.length} professional training courses 
+                  designed to enhance your expertise in {category.name.toLowerCase()}.
+                </p>
+                
+                <p>
+                  Join industry experts and fellow professionals in world-class training facilities across 
+                  major business hubs including London, Dubai, Barcelona, Paris, and more.
+                </p>
+              </div>
             </div>
 
-            <div className="overflow-x-auto">
+            {/* Quick Info */}
+            <div className="flex flex-wrap gap-6 mt-8">
+              <div className="flex items-center text-white/90">
+                <BookOpen className="h-5 w-5 mr-2" />
+                <span>{courses.length} Course{courses.length !== 1 ? 's' : ''}</span>
+              </div>
+              <div className="flex items-center text-white/90">
+                <Clock className="h-5 w-5 mr-2" />
+                <span>{Math.round(courses.reduce((acc, course) => acc + course.duration_days, 0) / courses.length)} Days Avg</span>
+              </div>
+              <div className="flex items-center text-white/90">
+                <Award className="h-5 w-5 mr-2" />
+                <span>Certificates Included</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* Available Courses Table */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Available Courses</h2>
+            <p className="text-lg text-gray-600">
+              Explore our {courses.length} professional training course{courses.length !== 1 ? 's' : ''} in {category.name.toLowerCase()}.
+            </p>
+          </div>
+
+          {courses.length > 0 ? (
+            <div className="bg-white rounded-lg shadow-sm border">
               <Table>
                 <TableHeader>
-                  <TableRow className="bg-gray-50/50">
+                  <TableRow>
                     <TableHead className="w-16"></TableHead>
-                    <TableHead className="min-w-[300px]">Course Name</TableHead>
-                    <TableHead className="min-w-[400px]">Description</TableHead>
-                    <TableHead className="w-32 text-center">Duration</TableHead>
-                    <TableHead className="w-32 text-center">Action</TableHead>
+                    <TableHead>Course Name</TableHead>
+                    <TableHead>Description</TableHead>
+                    <TableHead className="text-center">Duration</TableHead>
+                    <TableHead className="text-center">Action</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {courses.map((course) => (
-                    <TableRow key={course.id} className="hover:bg-gray-50/50">
+                    <TableRow key={course.id}>
                       <TableCell>
                         <div className="w-12 h-12 relative rounded-lg overflow-hidden">
                           <Image
@@ -226,7 +267,7 @@ const SingleCategoryView = ({ category }: SingleCategoryViewProps) => {
                           />
                         </div>
                       </TableCell>
-                      <TableCell>
+                      <TableCell className="font-medium">
                         <div className="space-y-1">
                           <h3 className="font-semibold text-gray-900 leading-tight">
                             {course.name}
@@ -238,7 +279,7 @@ const SingleCategoryView = ({ category }: SingleCategoryViewProps) => {
                         </div>
                       </TableCell>
                       <TableCell>
-                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">
+                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-2">
                           {course.description}
                         </p>
                       </TableCell>
@@ -254,10 +295,10 @@ const SingleCategoryView = ({ category }: SingleCategoryViewProps) => {
                         </div>
                       </TableCell>
                       <TableCell className="text-center">
-                        <Link href={`/courses/${course.id}`}>
+                        <Link href={`/courses/${course.slug}`}>
                           <Button 
                             size="sm" 
-                            className="w-full rounded-full hover:scale-105 transition-transform"
+                            className="rounded-full hover:scale-105 transition-transform"
                           >
                             View Details
                           </Button>
@@ -268,58 +309,17 @@ const SingleCategoryView = ({ category }: SingleCategoryViewProps) => {
                 </TableBody>
               </Table>
             </div>
-
-            {courses.length === 0 && (
-              <div className="text-center py-12">
-                <div className="text-gray-400 mb-4">
-                  <Calendar className="h-16 w-16 mx-auto" />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  No Courses Available
-                </h3>
-                <p className="text-gray-600">
-                  There are currently no courses available in this category.
+          ) : (
+            <Card>
+              <CardContent className="py-12 text-center">
+                <Calendar className="h-12 w-12 mx-auto text-gray-400 mb-4" />
+                <h3 className="text-lg font-medium text-gray-900 mb-2">No Courses Available</h3>
+                <p className="text-gray-600 mb-4">
+                  There are currently no courses available in this category. Contact us to request courses.
                 </p>
-              </div>
-            )}
-          </div>
-
-          {/* Category Statistics */}
-          {courses.length > 0 && (
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Card>
-                <CardContent className="p-6 text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">
-                    {courses.length}
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    Total Courses
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardContent className="p-6 text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">
-                    {Math.round(courses.reduce((acc, course) => acc + course.duration_days, 0) / courses.length)}
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    Avg. Duration (days)
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardContent className="p-6 text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">
-                    {courses.reduce((acc, course) => acc + course.duration_days, 0)}
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    Total Training Days
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+                <Button variant="outline">Request Training Courses</Button>
+              </CardContent>
+            </Card>
           )}
         </div>
       </section>

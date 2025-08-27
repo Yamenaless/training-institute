@@ -7,13 +7,12 @@ import categoriesData from '../../../../data/categories.json'
 
 interface CategoryPageProps {
   params: {
-    id: string
+    slug: string
   }
 }
 
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
-  const categoryId = parseInt(params.id)
-  const category = categoriesData.find(cat => cat.id === categoryId)
+  const category = categoriesData.find(cat => cat.slug === params.slug)
   
   if (!category) {
     return {
@@ -29,8 +28,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 }
 
 export default function SingleCategoryPage({ params }: CategoryPageProps) {
-  const categoryId = parseInt(params.id)
-  const category = categoriesData.find(cat => cat.id === categoryId)
+  const category = categoriesData.find(cat => cat.slug === params.slug)
   
   if (!category) {
     notFound()
@@ -48,6 +46,6 @@ export default function SingleCategoryPage({ params }: CategoryPageProps) {
 // Generate static params for all categories
 export async function generateStaticParams() {
   return categoriesData.map((category) => ({
-    id: category.id.toString(),
+    slug: category.slug,
   }))
 }

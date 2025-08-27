@@ -8,6 +8,7 @@ import categoriesData from '../../../../data/categories.json'
 
 interface Course {
   id: number
+  slug: string
   category_id: number
   name: string
   description: string
@@ -17,6 +18,7 @@ interface Course {
 
 interface Category {
   id: number
+  slug: string
   name: string
   description: string
   image: string
@@ -24,13 +26,13 @@ interface Category {
 
 interface PageProps {
   params: {
-    id: string
+    slug: string
   }
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const courses: Course[] = coursesData
-  const course = courses.find(c => c.id === parseInt(params.id))
+  const course = courses.find(c => c.slug === params.slug)
   
   if (!course) {
     return {
@@ -48,14 +50,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export async function generateStaticParams() {
   const courses: Course[] = coursesData
   return courses.map((course) => ({
-    id: course.id.toString(),
+    slug: course.slug,
   }))
 }
 
 export default function CoursePage({ params }: PageProps) {
   const courses: Course[] = coursesData
   const categories: Category[] = categoriesData
-  const course = courses.find(c => c.id === parseInt(params.id))
+  const course = courses.find(c => c.slug === params.slug)
 
   if (!course) {
     notFound()

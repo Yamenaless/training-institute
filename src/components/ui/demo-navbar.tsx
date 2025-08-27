@@ -43,24 +43,15 @@ interface DemoNavbarProps {
     name: string;
     url: string;
   }[];
-  auth?: {
-    login: {
-      text: string;
-      url: string;
-    };
-    signup: {
-      text: string;
-      url: string;
-    };
-  };
+
 }
 
 const DemoNavbar = ({
   logo = {
     url: "/",
-    src: "https://images.unsplash.com/photo-1607013251379-e6eecfffe234?w=100&h=100&fit=crop&auto=format",
-    alt: "London Premier Centre Logo",
-    title: "London Premier Centre",
+    src: "", // We'll use an icon instead
+    alt: "Professional Training Institute Logo",
+    title: "Professional Training Institute",
   },
   menu = [
     { title: "Home", url: "/" },
@@ -217,42 +208,31 @@ const DemoNavbar = ({
     { name: "Venues", url: "/venues" },
     { name: "Blog", url: "/blog" },
   ],
-  auth = {
-    login: { text: "Student Portal", url: "/login" },
-    signup: { text: "Enroll Now", url: "/signup" },
-  },
+
 }: DemoNavbarProps) => {
   return (
     <section className="py-4 border-b bg-white">
       <div className="container">
-        <nav className="hidden justify-between lg:flex">
-          <div className="flex items-center gap-6">
+        <nav className="hidden lg:flex">
+          <div className="flex items-center justify-between w-full">
             <a href={logo.url} className="flex items-center gap-2">
-              <img src={logo.src} className="w-8 h-8 rounded-lg object-cover" alt={logo.alt} />
-              <span className="text-lg font-semibold text-primary">{logo.title}</span>
+              <GraduationCap className="h-8 w-8 text-primary" />
+              <span className="text-xl font-bold text-gray-900">{logo.title}</span>
             </a>
-            <div className="flex items-center">
+            <div className="flex items-center ml-8">
               <NavigationMenu>
-                <NavigationMenuList>
+                <NavigationMenuList className="gap-2">
                   {menu.map((item) => renderMenuItem(item))}
                 </NavigationMenuList>
               </NavigationMenu>
             </div>
           </div>
-          <div className="flex gap-2">
-            <Button asChild variant="outline" size="sm">
-              <a href={auth.login.url}>{auth.login.text}</a>
-            </Button>
-            <Button asChild size="sm">
-              <a href={auth.signup.url}>{auth.signup.text}</a>
-            </Button>
-          </div>
         </nav>
         <div className="block lg:hidden">
           <div className="flex items-center justify-between">
             <a href={logo.url} className="flex items-center gap-2">
-              <img src={logo.src} className="w-8 h-8 rounded-lg object-cover" alt={logo.alt} />
-              <span className="text-lg font-semibold text-primary">{logo.title}</span>
+              <GraduationCap className="h-8 w-8 text-primary" />
+              <span className="text-xl font-bold text-gray-900">{logo.title}</span>
             </a>
             <Sheet>
               <SheetTrigger asChild>
@@ -264,8 +244,8 @@ const DemoNavbar = ({
                 <SheetHeader>
                   <SheetTitle>
                     <a href={logo.url} className="flex items-center gap-2">
-                      <img src={logo.src} className="w-8 h-8 rounded-lg object-cover" alt={logo.alt} />
-                      <span className="text-lg font-semibold text-primary">
+                      <GraduationCap className="h-8 w-8 text-primary" />
+                      <span className="text-xl font-bold text-gray-900">
                         {logo.title}
                       </span>
                     </a>
@@ -292,14 +272,7 @@ const DemoNavbar = ({
                       ))}
                     </div>
                   </div>
-                  <div className="flex flex-col gap-3">
-                    <Button asChild variant="outline">
-                      <a href={auth.login.url}>{auth.login.text}</a>
-                    </Button>
-                    <Button asChild>
-                      <a href={auth.signup.url}>{auth.signup.text}</a>
-                    </Button>
-                  </div>
+
                 </div>
               </SheetContent>
             </Sheet>
@@ -350,7 +323,7 @@ const renderMenuItem = (item: MenuItem) => {
   return (
     <a
       key={item.title}
-      className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-muted hover:text-primary"
+      className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-6 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-muted hover:text-primary"
       href={item.url}
     >
       {item.title}
